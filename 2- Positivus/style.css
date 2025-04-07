@@ -1,0 +1,1152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 93% ;
+    grid-template-rows: auto auto auto auto auto 964px 756px 904px 514px;
+    justify-content: center;
+    row-gap: 140px;
+}
+
+/* hero section */
+.hero{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 68px 515px 48px;
+    row-gap: 80px;
+    margin-top: 3%;
+}
+
+/* nav section */
+.hero>.nav{
+    display: grid;
+    grid-template-columns: 220px 811px;
+    grid-template-rows: 100%;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* logo */
+.hero>.nav>div:first-child{
+    display: grid;
+    align-items: center;
+}
+
+/* menu */
+.hero>.nav>div:last-child{
+    display: grid;
+    grid-template-columns: 570px 231px;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero>.nav>div:last-child>ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100%;
+}
+
+.hero>.nav>div:last-child>ul>li{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero>.nav>div:last-child>ul>li>a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Space Grotesk';
+    font-size: 20px;
+    font-weight: regular;
+    text-align: center;
+}
+.hero>.nav>div:last-child>ul>li>a:hover{
+    background-color: #B9FF66;
+    border-radius: 14px;
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* button */
+.hero>.nav>div:last-child>button{
+    display: grid;
+    width: 231px;
+    height: 68px;
+    align-items: center;
+    background-color:#fff ;
+    border: 1px solid black;
+    border-radius: 14px;
+    font-family: 'Space Grotesk';
+    font-size: 20px;
+    font-weight: regular;
+    color: #000;
+    cursor: pointer;
+}
+
+.hero>.nav>div:last-child>button:hover{
+    background-color: #B9FF66;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+/* middle hero section */
+.hero>.core{
+    display: grid;
+    grid-template-columns: 531px 600px;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+}
+
+/* text of middle hero section */
+.hero>.core>div:first-child{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 231px 112px 68px;
+    align-content: space-between;
+}
+
+.hero>.core>div:first-child>div:first-child{
+    font-family: 'Space Grotesk';
+    font-weight: medium;
+    font-size: 60px;
+}
+
+.hero>.core>div:first-child>div:nth-child(2){
+    width: 499px;
+    font-family: 'Space Grotesk';
+    font-weight: regular;
+    font-size: 20px;
+}
+
+.hero>.core>div:first-child>button{
+    width: 264px;
+    height: 68px;
+    border-radius: 14px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Space Grotesk';
+    font-weight: regular;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hero>.core>div:first-child>button:hover{
+    background-color: #B9FF66;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+/* picture div */
+.hero>.core>div:last-child{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    justify-items: center;
+}
+
+/* footer of hero section */
+.hero>.foot{
+    display: grid;
+    grid-template-columns: repeat(6,140px);
+    grid-template-rows: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ......................................................... */
+
+/* Service section */
+.service{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 51px auto;
+    row-gap: 80px;
+}
+
+/* service title */
+.service>.srv-title{
+    display: grid;
+    grid-template-columns: 178px  580px;
+    grid-template-rows: 100%;
+    column-gap: 40px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.service>.srv-title>div:first-child{
+    background-color: #B9FF66;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+/* service container and cards */
+.service>.srv-container{
+    display: grid;
+    grid-template-columns: repeat(2,600px);
+    grid-template-rows: repeat(3,310px);
+    justify-content: center;
+    gap: 40px;
+}
+
+/* 1- seo */
+.service>.srv-container>.card:first-child{
+    background-color: #F3F3F3;
+    border: 1px solid black;
+    border-radius: 45px;
+    box-shadow: 0px 5px 0px 0px;
+    display: grid;
+    grid-template-columns: 221px 210px;
+    grid-template-rows: 210px;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.service>.srv-container>.card>div:first-child>p{
+    background-color: #B9FF66;
+    font-size: 30px;
+    font-weight: medium;
+}
+
+.service>.srv-container>.card>div:first-child>a{
+    align-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: regular;
+    color: #191A23;
+}
+
+.service>.srv-container>.card>div:first-child>a>i{
+    color: #B9FF66;
+    transform: rotate(-30deg);
+    border-radius: 50%;
+    background-color: black;
+    font-size: 18px;
+    padding: 3%;
+}
+
+/* 2- ppc */
+.service>.srv-container>.card:nth-child(2){
+    background-color: #B9FF66;
+    border: 1px solid black;
+    border-radius: 45px;
+    box-shadow: 0px 5px 0px 0px;
+    display: grid;
+    grid-template-columns: 221px 210px;
+    grid-template-rows: 210px;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.service>.srv-container>.card:nth-child(2)>div:first-child>p{
+    background-color: #F3F3F3;
+    font-size: 30px;
+    font-weight: medium;
+}
+
+.service>.srv-container>.card:nth-child(2)>div:first-child>a{
+    align-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: regular;
+    color: #191A23;
+}
+
+.service>.srv-container>.card:nth-child(2)>div:first-child>a>i{
+    color: #B9FF66;
+    transform: rotate(-30deg);
+    border-radius: 50%;
+    background-color: black;
+    font-size: 18px;
+    padding: 3%;
+}
+
+/* 3- smm */
+.service>.srv-container>.card:nth-child(3){
+    background-color: #191A23;
+    border: 1px solid black;
+    border-radius: 45px;
+    box-shadow: 0px 5px 0px 0px;
+    display: grid;
+    grid-template-columns: 221px 210px;
+    grid-template-rows: 210px;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.service>.srv-container>.card:nth-child(3)>div:first-child>p{
+    background-color: #F3F3F3;
+    font-size: 30px;
+    font-weight: medium;
+}
+
+.service>.srv-container>.card:nth-child(3)>div:first-child>a{
+    align-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: regular;
+    color: #fff;
+}
+
+.service>.srv-container>.card:nth-child(3)>div:first-child>a>i{
+    color: #191A23;
+    transform: rotate(-30deg);
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 18px;
+    padding: 3%;
+}
+
+/* 4- email */
+.service>.srv-container>.card:nth-child(4){
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    border-radius: 45px;
+    box-shadow: 0px 5px 0px 0px;
+    display: grid;
+    grid-template-columns: 221px 210px;
+    grid-template-rows: 210px;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.service>.srv-container>.card:nth-child(4)>div:first-child>p{
+    background-color: #B9FF66;
+    font-size: 30px;
+    font-weight: medium;
+}
+
+.service>.srv-container>.card:nth-child(4)>div:first-child>a{
+    align-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: regular;
+    color: #191A23;
+}
+
+.service>.srv-container>.card:nth-child(4)>div:first-child>a>i{
+    color: #B9FF66;
+    transform: rotate(-30deg);
+    border-radius: 50%;
+    background-color: black;
+    font-size: 18px;
+    padding: 3%;
+}
+
+/* 5- cc */
+.service>.srv-container>.card:nth-child(5){
+    background-color: #B9FF66;
+    border: 1px solid black;
+    border-radius: 45px;
+    box-shadow: 0px 5px 0px 0px;
+    display: grid;
+    grid-template-columns: 197px 210px;
+    grid-template-rows: 210px;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.service>.srv-container>.card:nth-child(5)>div:first-child>p{
+    background-color: #F3F3F3;
+    font-size: 30px;
+    font-weight: medium;
+}
+
+.service>.srv-container>.card:nth-child(5)>div:first-child>a{
+    align-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: regular;
+    color: #191A23;
+}
+
+.service>.srv-container>.card:nth-child(5)>div:first-child>a>i{
+    color: #B9FF66;
+    transform: rotate(-30deg);
+    border-radius: 50%;
+    background-color: black;
+    font-size: 18px;
+    padding: 3%;
+}
+
+/* 6- analytics */
+.service>.srv-container>.card:nth-child(6){
+    background-color: #191A23;
+    border: 1px solid black;
+    border-radius: 45px;
+    box-shadow: 0px 5px 0px 0px;
+    display: grid;
+    grid-template-columns: 221px 210px;
+    grid-template-rows: 210px;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.service>.srv-container>.card:nth-child(6)>div:first-child>p{
+    background-color: #B9FF66;
+    font-size: 30px;
+    font-weight: medium;
+}
+
+.service>.srv-container>.card:nth-child(6)>div:first-child>a{
+    align-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: regular;
+    color: #fff;
+}
+
+.service>.srv-container>.card:nth-child(6)>div:first-child>a>i{
+    color: #000;
+    transform: rotate(-30deg);
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 18px;
+    padding: 3%;
+}
+
+/* text container div of service card */
+.service>.srv-container>.card>div:first-child{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 76px 41px;
+    align-content: space-between;
+}
+
+/* picture div of service card */
+.service>.srv-container>.card>div:last-child{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ............................................................... */
+
+/* let's make section */
+.lets{
+    background-color: rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 500px 495px;
+    grid-template-rows: 100%;
+    border-radius: 45px;
+    justify-content: space-around;
+}
+
+/* text div (1) */
+.lets>div:first-child{
+    display: grid;
+    align-content: space-evenly;
+}
+
+.lets>div:first-child>div:first-child{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.lets>div:first-child>div:nth-child(2){
+    width: 500px;
+    height: 69px;    
+    font-size: 18px;
+    font-weight: regular;
+}
+
+.lets>div:first-child>button{
+    background-color: #191A23;
+    width: 288px;
+    height: 68px;
+    border-radius: 14px;
+    font-size: 20px;
+    font-weight: regular;
+    color: #fff;
+}
+.lets>div:first-child>button:hover{
+    background-color: #B9FF66;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+/* imgage div(2) */
+.lets>div:last-child{
+    display: grid;
+    align-items: center;
+}
+
+.lets>div:last-child>img{
+    height: 115%;
+}
+
+/* ............................................................... */
+
+/* case study section */
+.case{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 51px 326px;
+    row-gap: 80px;
+    justify-content: space-between;
+}
+
+/* case study title */
+.case>div:first-child{
+    display: grid;
+    grid-template-columns: 265px 580px;
+    grid-template-rows: 100%;
+    column-gap: 40px;
+    font-size: 18px;
+    font-weight: regular;
+    text-align:left;
+}
+
+.case>div:first-child>div:first-child{
+    background-color: #B9FF66;
+    border-radius: 7px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* case study container */
+.case>.case-container{
+    background-color: #191A23;
+    border-radius: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 286px);
+    grid-template-rows: 163px;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.case>.case-container>div{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 28px;
+}
+
+.case>.case-container>div>div:first-child{
+    display: grid;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.case>.case-container>div>div:last-child{
+    display: grid;
+    grid-template-columns: 108px 35px;
+    grid-template-rows: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: #B9FF66;
+}
+
+.case>.case-container>div>div:last-child>a{
+    text-decoration: none;
+    color: #B9FF66;
+    font-size: 20px;
+    font-weight: 400;    
+}
+
+.case>.case-container>div>div:last-child>i{
+    transform: rotate(-35deg);
+}
+
+/* ............................................................... */
+
+/* working process section */
+.process{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 51px auto;
+    row-gap: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* process title */
+.process>.process-title{
+    display: grid;
+    grid-template-columns: 400px 292px;
+    grid-template-rows: 100%;
+    column-gap: 40px;
+    font-size: 18px;
+}
+
+.process>.process-title>div:first-child{
+    background-color: #B9FF66;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* process container and cards */
+.process>.process-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 280px repeat(5, 160px);    
+    row-gap: 30px;
+}
+
+.process>.process-container>div{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 45px;
+    display: grid;
+    grid-template-columns: 7% 88%;
+    grid-template-rows: 77px;
+    align-content: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 5px 0px 0px;
+}
+
+.process>.process-container>div>div:first-child{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.process>.process-container>div>div:last-child{
+    display: grid;
+    grid-template-columns: 70% 3%;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+    align-items: center;   
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.process>.process-container>div>div:last-child>i{
+    background-color: #f3f3f3;
+    border: 1px solid #191A23;
+    border-radius: 50%;
+    padding: 5%;
+    text-align: center;
+}
+
+/* first card  */
+.process>.process-container>.one{
+    background-color: #B9FF66;
+    display: grid;
+    grid-template-columns: 95%;
+    grid-template-rows: 50% 45%;
+}
+
+.process>.process-container>.one>div:first-child{
+    border-bottom: 1px solid #191A23;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    grid-template-rows: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.process>.process-container>.one>div>div:first-child{
+    font-size: 60px;
+    font-weight: 600;
+    display: grid;
+    align-content: center;
+}
+
+.process>.process-container>.one>div>div:last-child{
+    display: grid;
+    grid-template-columns: 17% 3%;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+    align-items: center;   
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.process>.process-container>.one>div>div:last-child>i{
+    background-color: #f3f3f3;
+    border: 1px solid #191A23;
+    border-radius: 50%;
+    padding: 5%;
+    text-align: center;
+}
+
+/* (2 row ) paragraph div */
+.process>.process-container>.one>p{
+    font-size: 22px;
+    font-weight: 300;
+    display: grid;
+    align-content: center;
+}
+
+/* ............................................................... */
+
+/* team section */
+.team{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 51px 725px 68px;
+    row-gap: 40px;
+}
+
+/* team section's title */
+.team>.team-title{
+    display: grid;
+    grid-template-columns: 115px 473px;
+    grid-template-rows: 100%;
+    column-gap: 40px;
+    font-size: 18px;
+    font-weight: regular;
+}
+
+.team>.team-title>div:first-child{
+    background-color: #B9FF66;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* team section's container */
+.team>.team-container{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2vw;
+    justify-content: center;
+    align-content: center;
+}
+
+.team>.team-container>.team-card{
+    background-color: #F3F3F3;
+    border-radius: 45px;
+    box-shadow: 0px 5px 0px 0px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 40% 40%;
+    justify-content: center;
+    align-content: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.team>.team-container>.team-card>.team-card-img{
+    border-bottom: 1px solid #191A23;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 3fr 8fr 1fr; 
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-content: center;
+    column-gap: 1%;
+}
+
+.team>.team-container>.team-card>.team-card-img>div:first-child{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+.team>.team-container>.team-card>.team-card-img>div:nth-child(2){
+    display: grid;
+    justify-self: flex-start;
+    align-self: flex-end;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.team>.team-container>.team-card>.team-card-img>div:nth-child(2)>p:nth-of-type(2){
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.team>.team-container>.team-card>.team-card-img>i{
+    display: flex;
+    align-self: flex-start;
+    justify-self: center;
+    background-color: #191A23;
+    border-radius: 50%;
+    padding: 30%;
+    font-size: 16px;
+    color: #B9FF66;
+    cursor: pointer;
+}
+
+.team>.team-container>.team-card>div:last-child{
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 100%;
+    padding: 4%;
+}
+
+.team>button{
+    background-color: #191A23;
+    width: 270px;
+    height: 100%;
+    justify-self: flex-end;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: regular;
+    color: #fff;
+    cursor: pointer;
+}
+.team>button:hover{
+    background-color: #B9FF66;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+/* ............................................................... */
+
+/* testimonials section */
+.testimonials{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 51px 1fr;
+    row-gap: 10%;
+}
+
+/* testimonials title section */
+.testimonials>.testimonials-title{
+    display: grid;
+    grid-template-columns: 245px 475px;
+    grid-template-rows: 100%;
+    align-items: center;
+    column-gap: 40px;
+    font-size: 18px;
+    font-weight: regular;
+}
+
+.testimonials>.testimonials-title>div:first-child{
+    background-color: #B9FF66;
+    border-radius: 7px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* testimonials container section */
+.testimonials>.testimonials-container{
+    background-color: #191A23;
+    border-radius: 45px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;   
+}
+
+/* .testimonials-container (core) */
+.testimonials>.testimonials-container>.testimonials-core{
+    display: grid;
+    grid-template-columns: 50% 50% 50%;
+    grid-template-rows: 90%;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    column-gap: 3%;
+    color: #fff;
+}
+
+.testimonials>.testimonials-container>.testimonials-core>.testimonials-card{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 20%;
+    align-content: space-evenly;    
+}
+
+.testimonials>.testimonials-container>.testimonials-core>.testimonials-card>div:first-child{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 90%;
+    align-items: center;
+    border: 1px solid #B9FF66;
+    border-radius: 45px;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 7%;
+}
+
+.testimonials>.testimonials-container>.testimonials-core>.testimonials-card>div:last-child{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 50% 50%;
+    justify-content: space-evenly;
+    align-self: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: #B9FF66;
+}
+
+.testimonials>.testimonials-container>.testimonials-core>.testimonials-card>div:last-child>p:last-child{
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/* .testimonials-container (arrows and 5 icons) */
+.testimonials>.testimonials-container>div:last-child{
+    display: grid;
+    grid-template-columns: 5% 25% 5%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials>.testimonials-container>div:last-child>div{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.testimonials>.testimonials-container>div:last-child>div:first-child{
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.testimonials>.testimonials-container>div:last-child>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.testimonials>.testimonials-container>div:last-child>div:nth-child(2)>img{
+    width: 3%;
+    height: 4%;
+}
+
+.testimonials>.testimonials-container>div:last-child>div:nth-child(2)>img:first-of-type{
+    background-color: #B9FF66;
+}
+
+/* ............................................................... */
+
+/* contact us section */
+.contact{    
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 51px 1fr;
+    row-gap: 10%;
+}
+
+/* contact us title section */
+.contact>.contact-title{
+    display: grid;
+    grid-template-columns: 230px 325px;
+    grid-template-rows: 100%;
+    align-items: center;
+    column-gap: 40px;
+    font-size: 18px;
+}
+
+.contact>.contact-title>div:first-child{
+    background-color: #B9FF66;
+    border-radius: 7px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    padding: 1%;
+}
+
+/* contact us container section */
+.contact>.contact-container{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 45px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+
+/* 1th div of form container (form div) */
+.contact>.contact-container>.contact-form>form>div:first-child{
+    display: flex;
+    margin: 5%;
+    width: 50%;
+}
+
+.contact>.contact-container>.contact-form>form>div:first-child>input{
+    width: 5%;
+    text-align: center;
+}
+
+.contact>.contact-container>.contact-form>form>div>input{
+    width: 80%;
+    margin: 3%;
+    padding: 1%;
+    border-radius: 16px;
+}
+
+.contact>.contact-container>.contact-form>form>div>textarea{
+    width: 80%;
+    height: 10%;
+    margin: 3%;
+    padding: 1%;
+    border-radius: 16px;
+}
+
+/* form button */
+.contact>.contact-container>.contact-form>form>button{
+    width: 556px;
+    height: 68px;
+    background-color: #191A23;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: regular;
+    cursor: pointer;
+}
+.contact>.contact-container>.contact-form>form>button:hover{
+    background-color: #B9FF66;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+/* 2th div of form container (image div) */
+.contact>.contact-container>div:last-child{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+    padding: 5%;
+}
+
+/* ............................................................... */
+
+/* footer section */
+footer{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 65% 15%;
+    background-color: #191A23;
+    border-radius: 40px 40px 0 0;
+    padding: 1% 5%;
+}
+
+/* first row of footer */
+footer>.first-row{
+    display: grid;
+    grid-template-columns: 20% 40% 20%;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* frist row (2th div (site map)) */
+footer>.first-row>div:nth-child(2)>ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100%;
+}
+
+footer>.first-row>div:nth-child(2)>ul>li{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer>.first-row>div:nth-child(2)>ul>li>a{
+    font-size: 18px;
+    color: #fff;
+}
+
+/* frist row of footer (last div (social icons)) */
+footer>.first-row>div:last-child{
+    display: grid;
+    grid-template-columns: repeat(3, 10%);
+    grid-template-rows: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer>.first-row>div:last-child>i{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 15%;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* 2th row of footer */
+footer>div:nth-child(2){
+    /* background-color: deeppink; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+/* contact info (left div)*/
+footer>div:nth-child(2)>div:first-child{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    color: #fff;
+    font-size: 18px;
+}
+
+footer>div:nth-child(2)>div:first-child>div:first-child{
+    background-color: #B9FF66;
+    width: fit-content;
+    border-radius: 7px;
+    padding: 1%;    
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+/* email box */
+footer>div:nth-child(2)>div:last-child{
+    background-color: #292A32;
+    border-radius: 14px;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer>div:nth-child(2)>div:last-child>input{
+    width: 285px;
+    height: 68px;
+    padding: 2%;
+    border: 1px solid #fff;
+    border-radius: 14px;
+    background-color: #292A32;
+}
+
+footer>div:nth-child(2)>div:last-child>button{
+    width: 250px;
+    height: 68px;
+    background-color: #B9FF66;
+    border-radius: 14px;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* last row of footer */
+footer>div:last-child{
+    display: grid;
+    grid-template-columns: 324px 121px;
+    grid-template-rows: 100%;
+    column-gap: 2%;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+}
+footer>div:last-child>a{
+    color: #fff;
+}
