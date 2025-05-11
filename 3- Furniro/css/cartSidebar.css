@@ -1,0 +1,824 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    filter: brightness(80%);
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* ...........................................................*/
+
+/* cart card */
+.cart-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 22vw;
+    height: 75vh;
+    background: #fff;
+    pointer-events: none;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* 1th div of cart card */
+.cart-container>.items {
+    width: 90%;
+    height: 50%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.cart-container>.items>div:first-child {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9F9F9F;
+    border-bottom: 1px solid black;
+}
+
+.cart-container>.items>div:first-child>h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+
+
+
+.cart-container>.items>div:nth-child(2),
+.cart-container>.items>div:last-child {
+    width: 100%;
+    height: 12vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-container>.items>div:nth-child(2)>img,
+.cart-container>.items>div:last-child>img {
+    width: 5.75vw;
+    height: 10vh;
+}
+
+.cart-container>.items>div:nth-child(2)>div>p>span,
+.cart-container>.items>div:last-child>div>p>span {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #B88E2F;
+}
+
+.cart-container>.items>div:nth-child(2)>div>p,
+.cart-container>.items>div:last-child>div>p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+}
+
+
+
+
+
+
+/* 2th div of cart card */
+.cart-container>.cart-total {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: space-between;
+}
+
+.cart-container>.cart-total>div:first-child {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}
+
+.cart-container>.cart-total>div:first-child>p:last-child {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #B88E2F;
+}
+
+
+
+.cart-container>.cart-total>div:last-child {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #000;
+}
+
+.cart-container>.cart-total>div:last-child>button {
+    width: fit-content;
+    height: 3vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #fff;
+
+}
+
+.cart-container>.cart-total>div:last-child>button>a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+/* ...........................................................*/
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo  */
+nav>a {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>a>img {
+    width: fit-content;
+    height: fit-content;
+}
+
+/* nav hyperlinks */
+nav>div:nth-child(2) {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav>div:nth-child(2)>ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+nav>div:nth-child(2)>ul>li {
+    width: fit-content;
+    height: fit-content;
+}
+
+nav>div:nth-child(2)>ul>li>a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+}
+
+nav>div:nth-child(2)>ul>li>a:hover {
+    background-color: #fff3e3;
+    border-radius: 35%;
+    padding: 10%;
+    transition: all 0.3s ease-in-out;
+}
+
+/* nav icons */
+nav>div:last-child {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav>div:last-child>a>img {
+    width: fit-content;
+    height: fit-content;
+}
+
+nav>div:last-child>a:hover {
+    background-color: #fff3e3;
+    border-radius: 50%;
+    padding: 2%;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* ...................................................... */
+
+/* filter section */
+.filter {
+    background-color: #F9F1E7;
+    width: 100%;
+    height: 10vh;
+}
+
+.filter>div {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.filter>div>a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+
+.filter>div>span {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 10%;
+    border-left: 1px solid #000;
+}
+
+/* .......................................................... */
+
+/* product main section */
+.product {
+    width: 95%;
+    height: 82vh;
+    margin: 4% 0%;
+    display: flex;
+    justify-self: center;
+    justify-content: space-evenly;
+}
+
+
+/* pictures div */
+.product>.pic-container {
+    width: 40%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.product>.pic-container>div {
+    background-color: #F9F1E7;
+    width: 5vw;
+    height: 10vh;
+    border-radius: 10px;
+}
+
+.product>.pic-container>div:hover {
+    border: 2px solid black;
+    cursor: zoom-in;
+}
+
+.product>.pic-container>div:last-child {
+    width: 25vw;
+    height: 55vh;
+    border-radius: 10px;
+}
+
+.product>.pic-container>div>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* text div */
+.product>.text-container {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product>.text-container>h3 {
+    font-size: 2.625rem;
+    font-weight: 400;
+}
+
+.product>.text-container>p:first-of-type {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #9f9f9f;
+}
+
+
+.product>.text-container>.stars {
+    width: 50%;
+    height: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product>.text-container>p:nth-of-type(2) {
+    font-size: 0.813rem;
+    font-weight: 400;
+    color: #000;
+    width: 70%;
+}
+
+.product>.text-container>p:nth-of-type(3),
+.product>.text-container>p:nth-of-type(4) {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+
+
+
+
+.product>.text-container>.size {
+    width: 20%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.product>.text-container>.size>button {
+    width: 1.823vw;
+    height: 3vh;
+    border: none;
+    border-radius: 5px;
+    background-color: #F9F1E7;
+    cursor: pointer;
+}
+
+.product>.text-container>.size>button:first-child {
+    background-color: #B88E2F;
+    color: #fff;
+}
+
+.product>.text-container>.size>button:hover {
+    background-color: #B88E2F;
+    color: #000;
+}
+
+
+
+.product>.text-container>.sofa-color {
+    width: 20%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product>.text-container>.sofa-color>button:first-child {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #816DFA;
+}
+
+
+.product>.text-container>.sofa-color>button:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #000;
+}
+
+
+.product>.text-container>.sofa-color>button:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #B88E2F;
+}
+
+
+.product>.text-container>.sofa-color>button:hover {
+    border: 2px solid black;
+}
+
+
+
+.product>.text-container>.buttons-area {
+    width: 85%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.product>.text-container>.buttons-area>input {
+    width: 6.51vw;
+    height: 6.5vh;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.product>.text-container>.buttons-area>button:hover {
+    background-color: #B88E2F;
+    color: #fff;
+
+}
+
+.product>.text-container>.buttons-area>button:nth-child(2) {
+    width: 11.198vw;
+    height: 6.5vh;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.product>.text-container>.buttons-area>button:last-child {
+    width: 11.198vw;
+    height: 6.5vh;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.product>.text-container>.serial {
+    width: 50%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+/* .......................................................... */
+
+/* description section */
+.description {
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.description>div:first-child {
+    width: 50%;
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+
+.description>div:first-child>p:first-child {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000;
+}
+
+
+.description>div:nth-child(2) {
+    width: 75%;
+    height: 18vh;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+
+
+.description>div:last-child {
+    width: 85%;
+    height: 35vh;
+    display: flex;
+    gap: 2%;
+}
+
+
+.description>div:last-child>img {
+    width: 50%;
+    height: 100%;
+    background-color: #F9F1E7;
+    border-radius: 7px;
+}
+
+
+/* .......................................................... */
+/* products container and cards */
+.products {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 1th item in products main container (title) */
+.products>p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+    margin: 3% 0%;
+}
+
+
+/* 2th item in products main container (products cards) */
+.products>.products-container {
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+}
+
+/* common cards attr. */
+.products>.products-container>.card {
+    width: 16vw;
+    height: 47vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products>.products-container>.card>a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+.products>.products-container>.card>a:hover {
+    border-radius: 7px;
+    padding: 2%;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* image div */
+.products>.products-container>.card>a>div:first-child {
+    width: 100%;
+    height: 70%;
+}
+
+.products>.products-container>.card>a>div:first-child>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* text div */
+.products>.products-container>.card>a>div:last-child {
+    background-color: #F4F5F7;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1% 4%;
+}
+
+
+.products>.products-container>.card>a>div:last-child>p:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #898989;
+}
+
+.products>.products-container>.card>a>div:last-child>div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+
+.products>.products-container>.card>a>div:last-child>div>p:nth-child(2) {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #b0b0b0;
+    text-decoration: line-through;
+}
+
+/* 3th item in products main container (button) */
+.products>a {
+    background-color: #fff;
+    width: 13vw;
+    height: 4.8vh;
+    border: 1px solid #B88E2F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #B88E2F;
+    margin: 3% 0%;
+}
+
+.products>a:hover {
+    background-color: #B88E2F;
+    color: #fff;
+    border-radius: 7px;
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+/* ........................................... */
+
+/* foot area which includes banner and footer */
+/* banner area */
+.banner {
+    background-color: #faf3ea;
+    border-bottom: 1px solid #d9d9d9;
+    width: 100%;
+    height: 27vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner>div {
+    width: fit-content;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1vw;
+}
+
+.banner>div>img {
+    object-fit: contain;
+}
+
+.banner>div>div {
+    object-fit: contain;
+    font-size: 1.625rem;
+    font-weight: 600;
+}
+
+.banner>div>div>p:last-child {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #898989;
+}
+
+/* .......................................................... */
+
+
+/* footer section */
+footer {
+    width: 100%;
+    height: 50.5vh;
+    display: flex;
+    flex-direction: column;
+    /* padding: 3%; */
+}
+
+/* core div of footer (container) */
+footer>.foot-core {
+    border-bottom: 1px solid #d9d9d9;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 4%;
+}
+
+/* all divs of footer (common att.) */
+footer>.foot-core>div {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #9f9f9f;
+}
+
+footer>.foot-core>div>a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 10%;
+}
+
+/* first div (core div) */
+footer>.foot-core>div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer>.foot-core>div:first-child>a {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* last div (core div) */
+footer>.foot-core>div:last-child {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+}
+
+footer>.foot-core>div:last-child>div>input {
+    width: 16vw;
+    height: 5vh;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+footer>.foot-core>div:last-child>div>input:last-child {
+    width: 7vw;
+    background-color: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+footer>.foot-core>div:last-child>div>input:last-child:hover {
+    background-color: #fff3e3;
+}
+
+/* rights reserved div */
+footer>div:last-child {
+    width: 100%;
+    height: 10%;
+    padding: 2% 4%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+}

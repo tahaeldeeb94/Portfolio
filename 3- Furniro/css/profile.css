@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ...........................................................*/
+
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* logo  */
+nav > a {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > a > img {
+  width: fit-content;
+  height: fit-content;
+}
+
+/* nav hyperlinks */
+nav > div:nth-child(2) {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav > div:nth-child(2) > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+}
+
+nav > div:nth-child(2) > ul > li {
+  width: fit-content;
+  height: fit-content;
+}
+
+nav > div:nth-child(2) > ul > li > a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+}
+nav > div:nth-child(2) > ul > li > a:hover {
+  background-color: #fff3e3;
+  border-radius: 35%;
+  padding: 10%;
+  transition: all 0.3s ease-in-out;
+}
+
+/* nav icons */
+nav > div:last-child {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav > div:last-child > a > img {
+  width: fit-content;
+  height: fit-content;
+}
+nav > div:last-child > a:hover {
+  background-color: #fff3e3;
+  border-radius: 50%;
+  padding: 2%;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* .......................................................... */
+.banner {
+  background-color: #faf3ea;
+  border-bottom: 1px solid #d9d9d9;
+  width: 100%;
+  height: 27vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.banner > div {
+  width: fit-content;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1vw;
+}
+
+.banner > div > img {
+  object-fit: contain;
+}
+
+.banner > div > div {
+  object-fit: contain;
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
+.banner > div > div > p:last-child {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #898989;
+}
+
+/* .......................................................... */
+
+/* footer section */
+footer {
+  width: 100%;
+  height: 50.5vh;
+  display: flex;
+  flex-direction: column;
+  /* padding: 3%; */
+}
+
+/* core div of footer (container) */
+footer > .foot-core {
+  border-bottom: 1px solid #d9d9d9;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 4%;
+}
+
+/* all divs of footer (common att.) */
+footer > .foot-core > div {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #9f9f9f;
+}
+
+footer > .foot-core > div > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 10%;
+}
+
+/* first div (core div) */
+footer > .foot-core > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+footer > .foot-core > div:first-child > a {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* last div (core div) */
+footer > .foot-core > div:last-child {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10%;
+}
+
+footer > .foot-core > div:last-child > div > input {
+  width: 16vw;
+  height: 5vh;
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+footer > .foot-core > div:last-child > div > input:last-child {
+  width: 7vw;
+  background-color: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+footer > .foot-core > div:last-child > div > input:last-child:hover {
+  background-color: #fff3e3;
+}
+
+/* rights reserved div */
+footer > div:last-child {
+  width: 100%;
+  height: 10%;
+  padding: 2% 4%;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+}

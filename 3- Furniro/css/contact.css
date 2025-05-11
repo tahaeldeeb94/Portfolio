@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ...........................................................*/
+
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* logo  */
+nav>a {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav>a>img {
+  width: fit-content;
+  height: fit-content;
+}
+
+/* nav hyperlinks */
+nav>div:nth-child(2) {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav>div:nth-child(2)>ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+}
+
+nav>div:nth-child(2)>ul>li {
+  width: fit-content;
+  height: fit-content;
+}
+
+nav>div:nth-child(2)>ul>li>a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+}
+
+nav>div:nth-child(2)>ul>li>a:hover {
+  background-color: #fff3e3;
+  border-radius: 35%;
+  padding: 10%;
+  transition: all 0.3s ease-in-out;
+}
+
+/* nav icons */
+nav>div:last-child {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav>div:last-child>a>img {
+  width: fit-content;
+  height: fit-content;
+}
+
+nav>div:last-child>a:hover {
+  background-color: #fff3e3;
+  border-radius: 50%;
+  padding: 2%;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* .......................................................... */
+
+/* hero section */
+.shop-hero {
+  width: 100%;
+  height: 32vh;
+  background-image: url(../media/shop-banner.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-hero>h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.shop-hero>p>a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.shop-hero>p>a:last-child {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #000;
+}
+
+/* ........................................................ */
+
+/* contact section */
+.contact {
+  width: 100%;
+  height: 115vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% auto;
+}
+
+.contact>h3 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact>p {
+  width: 45%;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #9f9f9f;
+  text-align: center;
+  display: flex;
+  align-self: center;
+  margin: 1% auto;
+}
+
+.contact>.contact-container {
+  width: 90%;
+  height: 85%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4%;
+}
+
+/* informations div */
+.contact>.contact-container>.info {
+  width: 20%;
+  height: 53vh;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: space-between;
+}
+
+.contact>.contact-container>.info>div {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact>.contact-container>.info>div>div:first-child {
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.5rem;
+}
+
+.contact>.contact-container>.info>div>div:last-child {
+  width: 80%;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.contact>.contact-container>.info>div>div:last-child>p:first-child {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-bottom: 1%;
+}
+
+/* .............. */
+
+/* form div */
+.contact>.contact-container>.contact-form {
+  width: 40%;
+  height: 100%;
+}
+
+.contact>.contact-container>.contact-form>form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact>.contact-container>.contact-form>form>input {
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.contact>.contact-container>.contact-form>form>a {
+  text-decoration: none;
+  width: 20vw;
+  height: 5.5vh;
+  border-radius: 5px;
+  background-color: #B88E2F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+
+.contact>.contact-container>.contact-form>form>a:hover {
+  transform: scale(1.1);
+  transition: all 0.5;
+}
+
+/* .......................................................... */
+.banner {
+  background-color: #faf3ea;
+  border-bottom: 1px solid #d9d9d9;
+  width: 100%;
+  height: 27vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.banner>div {
+  width: fit-content;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1vw;
+}
+
+.banner>div>img {
+  object-fit: contain;
+}
+
+.banner>div>div {
+  object-fit: contain;
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
+.banner>div>div>p:last-child {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #898989;
+}
+
+/* .......................................................... */
+
+/* footer section */
+footer {
+  width: 100%;
+  height: 50.5vh;
+  display: flex;
+  flex-direction: column;
+  /* padding: 3%; */
+}
+
+/* core div of footer (container) */
+footer>.foot-core {
+  border-bottom: 1px solid #d9d9d9;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 4%;
+}
+
+/* all divs of footer (common att.) */
+footer>.foot-core>div {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #9f9f9f;
+}
+
+footer>.foot-core>div>a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 10%;
+}
+
+/* first div (core div) */
+footer>.foot-core>div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+footer>.foot-core>div:first-child>a {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* last div (core div) */
+footer>.foot-core>div:last-child {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10%;
+}
+
+footer>.foot-core>div:last-child>div>input {
+  width: 16vw;
+  height: 5vh;
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+footer>.foot-core>div:last-child>div>input:last-child {
+  width: 7vw;
+  background-color: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+footer>.foot-core>div:last-child>div>input:last-child:hover {
+  background-color: #fff3e3;
+}
+
+/* rights reserved div */
+footer>div:last-child {
+  width: 100%;
+  height: 10%;
+  padding: 2% 4%;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
